@@ -34,7 +34,14 @@ export const actions = {
       return { response: 'passwordInexistente' };
     }
 
-  cookies.set('sessionid', user, { path: '/' });
+    cookies.set('sessionid', user, {
+      path: '/',
+      httpOnly: true,
+          sameSite: "strict",
+          secure: '!dev',
+          maxAge: 60 * 60 * 24 * 30,
+          headers: { "x-sveltekit-action": "true" },
+    });
     return {response: "yeah",
       'user': user,
       'password': password
