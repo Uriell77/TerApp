@@ -23,6 +23,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@vercel/speed-insights": "^1.2.0",
 		"bulma": "^1.0.4"
 	}
 }
