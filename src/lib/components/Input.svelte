@@ -75,14 +75,15 @@
   .puser{
   position: relative;
   z-index: 10;
-  bottom: 50px;
+  bottom: 30px;
+  left:20px;
   color: black; 
   }
   .buser{
   position: relative;
   z-index: 30;
-  bottom: 115px;
-  right: -280px;
+  bottom: 55px;
+  right: -240px;
   color: black; 
 
   }

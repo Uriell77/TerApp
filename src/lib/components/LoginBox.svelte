@@ -83,7 +83,7 @@ $effect(() => {
 
 {#key LogReg}
   <div
-    class="container has-text-centered box px-2 pb-3 pt-3 is-shadowless"
+    class="container has-text-centered box px-6 pb-3 pt-3 is-shadowless"
     style:height="{mov.current}rem"
   >
     <section>

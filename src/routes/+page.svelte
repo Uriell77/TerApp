@@ -35,7 +35,7 @@
     align-items: center;
     flex: 0.6;
     color:white;
-    background-color: rgba(1,1,1,0) !important; 
+    background-color: rgba(1,1,1,.3) !important; 
 
   }
 
