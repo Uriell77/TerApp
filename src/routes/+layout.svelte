@@ -1,6 +1,8 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+  import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+  injectSpeedInsights();
 
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
