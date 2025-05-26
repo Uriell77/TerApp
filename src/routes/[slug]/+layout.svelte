@@ -13,7 +13,6 @@
   .section {
   min-height: 100vh;
   background-color: rgb(250,250,255) !important;
-  position:absolute;
   width:100%;
   left:0px;
   overflow-x:hidden;

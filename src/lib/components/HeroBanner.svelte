@@ -1,4 +1,5 @@
 <script>
+  import Tabs from '$lib/components/Tabs.svelte';
   import HeroButtons from '$lib/components/HeroButtons.svelte';
 
   let {usuario} = $props();
@@ -11,17 +12,17 @@
   <HeroButtons />
 
   <!-- hero body -->
-  <div class="hero-body py-5">
+  <div class="hero-body py-5 has-text-centered">
     <div class="logo">
-      <img src="{usuario.store.storelogo}" alt="logo" loading="lazy">
+      <img class="m-0" src="{usuario.store.storelogo}" alt="logo" loading="lazy">
     </div>
-    <h1 class="has-text-weight-bold">{usuario.store.storename}</h1>
+    <h1 class="has-text-weight-bold pb-3">{usuario.store.storename}</h1>
     <h4>{usuario.store.storequote}</h4>
   </div>
 
   <!-- hero tabs -->
   <div class="contenttab is-flex">
-  <!--  <Tabs /> -->
+  <Tabs />
   </div>
 
 </section>
@@ -29,12 +30,13 @@
 <style>
   .logo{
     position:absolute;
-    top:50%;
+    top:40%;
     left:50%;
     transform:translate(-50%,-120%);
     width:100px;
     height:100px;
     border-radius:30px;
+    padding:0px;
   }
 
   .hero-body{

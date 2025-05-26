@@ -1,6 +1,6 @@
 @import '@fontsource/fira-mono';
 @import './lib/html/css/style.css';
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+@import "../node_modules/bulma/css/bulma.min.css";
 
 
 :root {

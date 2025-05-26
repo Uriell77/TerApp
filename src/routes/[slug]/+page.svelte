@@ -1,7 +1,6 @@
 <script>
   import Hero from '$lib/components/HeroBanner.svelte';
   import NavTab from '$lib/components/NavTab.svelte';
-  import Tabs from '$lib/components/Tabs.svelte';
   import Content from '$lib/components/Content.svelte';
 
 
