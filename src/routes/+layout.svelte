@@ -4,6 +4,7 @@
   import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
   injectSpeedInsights();
 
+
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
 </script>
