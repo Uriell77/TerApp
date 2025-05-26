@@ -8,6 +8,7 @@
         alt="Placeholder image"
         width="{w}"
         height="{h}"
+        loading="lazy"
       />
 
 <style>

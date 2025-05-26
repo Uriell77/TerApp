@@ -14,6 +14,8 @@
            <p class="mx-0 cristal is-size-7 p-2">
              Consectetur eum rerum ea voluptatem est possimus earum ad. Qui
              Ipsum assumenda iste nobis dolores tempore? Veritatis vel totam blanditiis?
+             jhkjhkjhjkhkjhkjhjkkjhghjhkkjhkjhkjhkj
+             Amet in aliquam temporibus velit nulla Doloribus excepturi aliquam ipsam libero quas quia Rem earum reprehenderit illo dolorem explicabo velit.
            </p>
         </div>
       </div>
@@ -34,15 +36,16 @@
 
   p{
     color:black;
-    overflow:hidden;
     text-align:center;
     position:relative;
+    bottom:-25px;
     left:0px;
     height:87px;
-    padding:0px 0px;
+    width:100%;
     text-overflow:ellipsis;
     white-space:nowrap;
-    line-clamp: 3;
+    overflow:hidden;
+    word-break: break-all;
   }
 
 

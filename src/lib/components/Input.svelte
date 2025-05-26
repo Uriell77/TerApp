@@ -79,11 +79,12 @@
   left:20px;
   color: black; 
   }
+
   .buser{
   position: relative;
   z-index: 30;
-  bottom: 55px;
-  right: -240px;
+  bottom: 3.5rem;
+  right: -15em;
   color: black; 
 
   }
@@ -98,4 +99,11 @@
       height: 60px;
   }
 
+
+@media (min-width: 500px) {
+  .buser{
+    bottom: 55px;
+    right: -20em;
+  }
+  }
 </style>

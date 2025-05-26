@@ -30,7 +30,7 @@
 <style>
   .logo{
     position:absolute;
-    top:40%;
+    top:20%;
     left:50%;
     transform:translate(-50%,-120%);
     width:100px;
@@ -40,8 +40,7 @@
   }
 
   .hero-body{
-    background-color: rgba(200,200,200,.4);
-    backdrop-filter: blur(4px);
+    background-color: rgba(200,200,200,.7);
     border-radius:30px;
     border-style:solid;
     border-width:thin;

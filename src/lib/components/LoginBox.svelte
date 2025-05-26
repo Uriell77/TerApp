@@ -171,7 +171,7 @@ $effect(() => {
         {/each}
       </form>
     {/if}
-    <div class="group mt-3">
+    <div class="group is-flex mt-3">
       <button class="button is-rounded is-dark is-light" onclick={formchange}>
         {#if LogReg}
           Ir a Login
@@ -225,4 +225,14 @@ $effect(() => {
     flex: 0.6;
     color: white;
   }
+
+
+
+@media (max-width: 768px) {
+  .cristal{
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  }
+
 </style>

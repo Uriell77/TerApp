@@ -409,8 +409,7 @@ footer {
 
 
 .cristal{
-    backdrop-filter: blur(4px);
-    background-color: rgba(200,200,200,.4);
+    background-color: rgba(205,205,205,.8);
 }
 
 

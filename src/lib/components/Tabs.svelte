@@ -1,7 +1,6 @@
 <script>
   import Card from '$lib/components/Card.svelte';
-  const stacks = ["Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card","Card"]
-
+  const stacks = ["Card","Card","Card","Card","Card","Card","Card"]
   const dermov = $state(0);
   const izmov = $state(0);
   let tabers = $state(0);
@@ -42,8 +41,7 @@
 
 <style>
   .tabs{
-    backdrop-filter: blur(4px);
-    background-color: rgba(200,200,200,.4);
+    background-color: rgba(200,200,200,.7);
     width:400px !important;
     height:78px !important;
     overflow-x: scroll !important;
