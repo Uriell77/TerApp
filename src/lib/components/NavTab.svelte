@@ -26,7 +26,7 @@
 <style>
   .activo{
     font-weight: bold;
-    background-color: rgba(200,200,240,.7);
+    background-color: rgba(200,200,240,.9);
     border-radius: 20px 20px 0px 0px;
     transform:scale(1.2,1);
     z-index:100;
@@ -34,7 +34,7 @@
 
   .section{
   position: stticky;
-  transform:translate(0px,17px);
+  transform:translate(0px,18px);
   }
 
   .cristal{

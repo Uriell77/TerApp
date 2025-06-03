@@ -28,7 +28,7 @@
 </script>
 
 
-<section class="box cristal mt-0 p-1">
+<section class="box mt-0 p-1">
 
   <div class="tab is-size-2 minor is-clickable cristal has-text-black" id="minor" onclick="{cambio}" onkeyup="{cambio}">
     &#60;
@@ -60,6 +60,11 @@
 <style>
 
 
+  .box{
+    background-color:rgba(1,1,1,0) !important;
+  }
+
+
   .numeracion{
     position:relative;
     top:-20px;
@@ -87,12 +92,12 @@
 
   .tab{
     position:absolute;
-    top:20%;
+    top:24rem;
     z-index:100;
   }
 
   .mayor{
-    right:0px;
+    right:0%;
   }
 
   .tarjeta{
@@ -119,6 +124,12 @@
 
   /* Estilos para desktop (a partir de un cierto ancho) */
   @media (min-width: 768px) {
+    .tab{
+      top:87%;
+    }
+  .mayor{
+    right:21%;
+  }
 
   }
 </style>

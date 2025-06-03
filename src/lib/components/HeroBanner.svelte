@@ -30,7 +30,7 @@
 <style>
   .logo{
     position:absolute;
-    top:20%;
+    top:8rem;
     left:50%;
     transform:translate(-50%,-120%);
     width:100px;
