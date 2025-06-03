@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import { fade } from 'svelte/transition';
   const dermov = $state(0);
   const izmov = $state(0);
@@ -30,9 +32,11 @@
 
 <section class="box mt-0 p-1">
 
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div class="tab is-size-2 minor is-clickable cristal has-text-black" id="minor" onclick="{cambio}" onkeyup="{cambio}">
     &#60;
   </div>
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
   <div class="tab is-size-2 mayor is-clickable cristal has-text-black" id="mayor" onclick="{cambio}" onkeyup="{cambio}">
     &#62;
   </div>
@@ -40,7 +44,7 @@
 
     <div class="tarjeta">
       {#key ter}
-        <img src="{ter ? "/logo2.jpeg":"/Gemini2.jpeg"}" alt="imagendebanner" in:fade={{delay:300,duration:300}} out:fade={{duration:300}} inert="false" loading="lazy"/>
+        <img src="{ter ? "/logo2.jpeg":"/Gemini2.jpeg"}" alt="imagendebanner" in:fade={{delay:300,duration:300}} out:fade={{duration:300}}  loading="lazy"/>
         <div class="container">
           <p class="cristal" in:fade={{delay:300,duration:300}} out:fade={{duration:300}} inert="false">kjkkjhkhjjhjhgjgh</p>
         </div>
@@ -62,6 +66,7 @@
 
   .box{
     background-color:rgba(1,1,1,0) !important;
+    z-index:10;
   }
 
 
@@ -93,7 +98,7 @@
   .tab{
     position:absolute;
     top:24rem;
-    z-index:100;
+    z-index:1000;
   }
 
   .mayor{
