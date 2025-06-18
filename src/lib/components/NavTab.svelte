@@ -2,10 +2,12 @@
   let tab = ["Servicios","Personal","Promociones","Quienes Somos?"]
   let estate = $state('Servicios');
   let {intab=$bindable()} = $props();
+  let ant;
 
   function activo(e){
     estate = e.target.textContent
     intab = e.target.id
+
   }
 </script>
 
@@ -14,7 +16,7 @@
   <div class="tabs is-centered is-fullwidth-mobile" onclick={activo}>
     <ul>
       {#each tab as t,index}
-      <li class="{estate == t ? "is-active activo":""} cristal" >
+      <li class="{estate == t ? "is-active activo":""} cristal lip" >
         <a class="is-size-7 has-text-black" id="{index}">{t}  </a>
       </li>
       {/each}
@@ -26,7 +28,7 @@
 <style>
   .activo{
     font-weight: bold;
-    background-color: rgba(200,200,240,.9);
+    background-color: rgba(200,200,240,1) !important;
     border-radius: 20px 20px 0px 0px;
     transform:scale(1.2,1);
     z-index:100;
@@ -37,8 +39,9 @@
   transform:translate(0px,18px);
   }
 
-  .cristal{
+  .lip{
     border-radius: 20px 20px 0px 0px;
+    background-color:rgba(205,205,205,1);
   }
 
   li{ 

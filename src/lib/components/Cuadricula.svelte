@@ -1,5 +1,5 @@
 <script>
-  let ter = ["servicioa", "serviciob", "servicioc", "serviciod", "servicioe", "serviciof"]
+  let ter = ["servicioa", "serviciob", "servicioc", "serviciod", "servicioe", "serviciof","servicioa", "serviciob", "servicioc", "serviciod", "servicioe", "serviciof"]
 </script>
 
 
