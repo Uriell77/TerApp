@@ -35,7 +35,7 @@
 
 
 
-<section class="section pt-0 px-0">
+<section class="section pt-0 px-0 pb-0">
     <Content bind:cont="{contenido}"/>
 </section>
 

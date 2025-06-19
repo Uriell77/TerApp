@@ -1,5 +1,4 @@
 <script>
-  import Tabs from '$lib/components/Tabs.svelte';
   import HeroButtons from '$lib/components/HeroButtons.svelte';
 
   let {usuario} = $props();
@@ -18,11 +17,6 @@
     </div>
     <h1 class="has-text-weight-bold pb-3">{usuario.store.storename}</h1>
     <h4>{usuario.store.storequote}</h4>
-  </div>
-
-  <!-- hero tabs -->
-  <div class="contenttab is-flex">
-  <Tabs />
   </div>
 
 </section>

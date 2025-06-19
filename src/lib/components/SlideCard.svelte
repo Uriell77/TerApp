@@ -30,38 +30,56 @@
 </script>
 
 
-<section class="box mt-0 p-1">
+<div class="container">
+  <section class="box mt-0 p-1">
 
-  <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="tab is-size-2 minor is-clickable cristal has-text-black" id="minor" onclick="{cambio}" onkeyup="{cambio}">
-    &#60;
-  </div>
-  <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="tab is-size-2 mayor is-clickable cristal has-text-black" id="mayor" onclick="{cambio}" onkeyup="{cambio}">
-    &#62;
-  </div>
-  <div class="banner-slider is-flex">
-
-    <div class="tarjeta">
-      {#key ter}
-        <img src="{ter ? "/logo2.jpeg":"/Gemini2.jpeg"}" alt="imagendebanner" in:fade={{delay:300,duration:300}} out:fade={{duration:300}}  loading="lazy"/>
-        <div class="container">
-          <p class="cristal" in:fade={{delay:300,duration:300}} out:fade={{duration:300}} inert="false">kjkkjhkhjjhjhgjgh</p>
+    <div class="columns is-centered is-mobile is-narrow">
+      <div class="column is-half">
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <div class="tab is-size-2 minor is-clickable cristal has-text-black" id="minor" onclick="{cambio}" onkeyup="{cambio}">
+          &#60;
         </div>
-      {/key}
+      </div>
+      <div class="column is-half">
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <div class="is-pulled-right tab is-size-2 mayor is-clickable cristal has-text-black" id="mayor" onclick="{cambio}" onkeyup="{cambio}">
+          &#62;
+        </div>
+      </div>
     </div>
 
+    <div class="banner-slider is-flex">
+
+      <div class="tarjeta">
+        {#key ter}
+          <img src="{ter ? "/logo2.jpeg":"/Gemini2.jpeg"}" alt="imagendebanner" in:fade={{delay:300,duration:300}} out:fade={{duration:300}}  loading="lazy"/>
+          <div class="container">
+            <p class="cristal" in:fade={{delay:300,duration:300}} out:fade={{duration:300}} inert="false">kjkkjhkhjjhjhgjgh</p>
+          </div>
+        {/key}
+      </div>
+
+    </div>
+
+    <div class="is-size-7 numeracion cristal has-text-black">000000</div>
+
+
+  </section>
+
+
   </div>
-
-  <div class="is-size-7 numeracion cristal has-text-black">000000</div>
-
-
-</section>
-
 
 
 
 <style>
+
+
+  .columns{
+  width:102%;
+  position:absolute;
+  top:30%;
+  }
+
 
 
   .box{
@@ -96,9 +114,9 @@
   }
 
   .tab{
-    position:absolute;
-    top:3rem;
     z-index:1000;
+    width:20px;
+    height:auto;
   }
 
   .mayor{
@@ -112,20 +130,6 @@
     overflow:hidden;
   }
 
-  .slide{
-    width:100%;
-    height:13rem;
-    overflow:hidden;
-    position:relative;
-    border-radius:30px;
-    overflow-x:scroll;
-    justify-content:center;
-    text-align:center;
-    align-items:center;
-  }
-  .slide::-webkit-scrollbar{
-    display:none;
-  }
 
   /* Estilos para desktop (a partir de un cierto ancho) */
   @media (min-width: 768px) {

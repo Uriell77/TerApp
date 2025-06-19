@@ -42,7 +42,7 @@
 <style>
   .tabs{
     background-color: rgba(200,200,200,.7);
-    width:400px !important;
+    width:100% !important;
     height:78px !important;
     overflow-x: scroll !important;
     scroll-behavior: smooth;
