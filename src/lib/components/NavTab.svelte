@@ -11,7 +11,7 @@
   }
 </script>
 
-<section class="section is-pulled-bottom-mobile px-0 pt-0">
+<section class="section is-pulled-bottom-mobile px-0 pt-0 is-hidden-desktop">
 
   <div class="tabs is-centered is-fullwidth-mobile" onclick={activo}>
     <ul>

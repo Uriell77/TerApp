@@ -12,16 +12,20 @@
 
   <!-- hero body -->
   <div class="hero-body py-5 has-text-centered">
-    <div class="logo">
+    <div class="logo cristal p-0">
       <img class="m-0" src="{usuario.store.storelogo}" alt="logo" loading="lazy">
     </div>
-    <h1 class="has-text-weight-bold pb-3">{usuario.store.storename}</h1>
+    <h1 class="has-text-weight-bold pb-3 storename">{usuario.store.storename}</h1>
     <h4>{usuario.store.storequote}</h4>
   </div>
 
 </section>
 
 <style>
+  .storename{
+    z-index: 50;
+  }
+
   .logo{
     position:absolute;
     top:8rem;
@@ -29,8 +33,9 @@
     transform:translate(-50%,-120%);
     width:100px;
     height:100px;
-    border-radius:30px;
+    border-radius:50px !important;
     padding:0px;
+    z-index:10;
   }
 
   .hero-body{
